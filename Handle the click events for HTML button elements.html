@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Click Event</title>
+</head>
+<body>
+    <p id="message">Click the button to see a message.</p>
+    <button id="action-button">Click Me</button>
+    <script>const messageParagraph = document.getElementById('message');
+const actionButton = document.getElementById('action-button');
+
+actionButton.addEventListener('click', () => {
+    messageParagraph.textContent = 'Button was clicked! Event handled.';
+});
+</script>
+</body>
+</html>
+

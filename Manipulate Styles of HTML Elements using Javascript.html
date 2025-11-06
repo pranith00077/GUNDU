@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Style Example</title>
+</head>
+<body style="text-align:center; margin-top:50px;">
+
+  <h1 id="heading">Welcome to My Page!</h1>
+  <button onclick="changeStyle()">Change Style</button>
+
+  <script>
+    function changeStyle() {
+      const heading = document.getElementById("heading");
+      heading.style.color = "white";
+      heading.style.backgroundColor = "purple";
+      heading.style.fontSize = "40px";
+      heading.style.padding = "20px";
+      heading.style.borderRadius = "10px";
+      heading.style.transition = "0.5s"; // smooth effect
+    }
+  </script>
+
+</body>
+</html>

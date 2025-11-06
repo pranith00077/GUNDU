@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Listeners</title>
+    <style>
+        #event-area { padding: 50px; background-color: #f0f0f0; border: 1px solid #ccc; text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="event-area">Move your mouse over this area.</div>
+    <script>const eventArea = document.getElementById('event-area');
+
+eventArea.addEventListener('mouseover', function() {
+    console.log('Event triggered: Mouse is over the area!');
+    eventArea.style.backgroundColor = 'lightgreen';
+});
+
+eventArea.addEventListener('mouseout', function() {
+    console.log('Event triggered: Mouse has left the area!');
+    eventArea.style.backgroundColor = '#f0f0f0';
+});
+</script>
+</body>
+</html>

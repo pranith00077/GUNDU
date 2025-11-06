@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 250px;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Sign Up Form</h2>
+  
+  <form id="myForm" onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <input type="email" id="email" placeholder="Enter your email"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="errorMsg" class="error"></p>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const errorMsg = document.getElementById("errorMsg");
+
+      // Clear previous error message
+      errorMsg.textContent = "";
+
+      // Validate name
+      if (name === "") {
+        errorMsg.textContent = "Please enter your name.";
+        return false; // Prevent form submission
+      }
+
+      // Validate email
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        errorMsg.textContent = "Please enter a valid email address.";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true; // Allow form submission
+    }
+  </script>
+
+</body>
+</html>

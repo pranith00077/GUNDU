@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Element Example</title>
+</head>
+<body style="text-align:center; margin-top:50px;">
+
+  <h1 id="message">Hello, I am going to disappear!</h1>
+  <button onclick="removeElement()">Remove Element</button>
+
+  <script>
+    function removeElement() {
+      const element = document.getElementById("message");
+      element.remove();  // removes the element from the DOM
+    }
+  </script>
+
+</body>
+</html>

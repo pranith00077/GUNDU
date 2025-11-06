@@ -1,0 +1,32 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Image Example</title>
+</head>
+<body style="text-align:center; margin-top:50px;">
+
+  <h2>Change Image with JavaScript</h2>
+
+  <!-- Image -->
+  <img id="myImage" src="https://via.placeholder.com/200x150?text=Image+1" alt="Image" width="200" height="150">
+  <br><br>
+
+  <!-- Button -->
+  <button onclick="changeImage()">Change Image</button>
+
+  <script>
+    function changeImage() {
+      const img = document.getElementById("myImage");
+
+      // Check current image source and switch to another
+      if (img.src.includes("Image+1")) {
+        img.src = "https://via.placeholder.com/200x150?text=Image+2";
+      } else {
+        img.src = "https://via.placeholder.com/200x150?text=Image+1";
+      }
+    }
+  </script>
+<!---change the image path-->
+</body>
+</html>

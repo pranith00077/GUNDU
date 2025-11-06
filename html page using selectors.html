@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Selectors</title>
+</head>
+<body>
+    <h1 id="main-title">This is the Main Title</h1>
+    <p class="content-para">This is a paragraph with a class.</p>
+    <p class="content-para">This is another paragraph with the same class.</p>
+    <div>A div element.</div>
+    <script>const titleElement = document.getElementById('main-title');
+console.log("Selected by ID:", titleElement);
+
+const firstParagraph = document.querySelector('.content-para');
+console.log("Selected first element by class with querySelector:", firstParagraph);
+
+const allParagraphs = document.querySelectorAll('.content-para');
+console.log("Selected all elements by class with querySelectorAll:", allParagraphs);
+</script>
+</body>
+</html>
+
