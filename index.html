@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FSD Lab Materials – Download Center</title>
+  <title>FSD Lab Materials – Organized Downloads</title>
   <style>
     body {
       font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-      background: #f3f4f6;
+      background: #f9fafb;
       margin: 0;
       padding: 40px;
       color: #111;
@@ -29,22 +29,31 @@
       font-size: 1rem;
     }
 
+    h2 {
+      margin-top: 40px;
+      background: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     ul {
       list-style: none;
       padding: 0;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 10px auto 0;
     }
 
     li {
       background: #fff;
       margin: 10px 0;
-      padding: 16px 20px;
+      padding: 14px 20px;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       transition: transform 0.2s ease;
     }
 
@@ -70,61 +79,77 @@
       font-size: 0.9rem;
     }
 
-    .icon {
-      font-size: 1.2rem;
-      margin-right: 8px;
-    }
-
     @media (max-width: 600px) {
       body { padding: 20px; }
-      li { flex-direction: column; align-items: flex-start; }
+      li { padding: 12px 15px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>📚 FSD-2 Lab Materials Download</h1>
-    <p>Click any file below to download it instantly</p>
+    <h1>📚 FSD-2 Lab Materials Download Portal</h1>
+    <p>Files grouped by type for easy download</p>
   </header>
 
+  <!-- ==================== HTML FILES ==================== -->
+  <h2>🌐 HTML Files</h2>
   <ul>
-    <li><a href=". Create script files in MySQL Workbench.sql" download>📄 . Create script files in MySQL Workbench.sql</a></li>
-    <li><a href=". Create, insert, and update data in a table.sql" download>📄 . Create, insert, and update data in a table.sql</a></li>
+    <li><a href="Change Image on Button Click.html" download>📄 Change Image on Button Click.html</a></li>
+    <li><a href="Count the Numbers of Clicks on a Button.html" download>📄 Count the Numbers of Clicks on a Button.html</a></li>
+    <li><a href="event listiner.html" download>📄 event listiner.html</a></li>
+    <li><a href="fun dec ,fun exp ,arrow fun.html" download>📄 fun dec ,fun exp ,arrow fun.html</a></li>
+    <li><a href="Handle the click events for HTML button elements.html" download>📄 Handle the click events for HTML button elements.html</a></li>
+    <li><a href="html page using selectors.html" download>📄 html page using selectors.html</a></li>
+    <li><a href="Manipulate Styles of HTML Elements using Javascript.html" download>📄 Manipulate Styles of HTML Elements using Javascript.html</a></li>
+    <li><a href="Remove an HTML Element from the DOM.html" download>📄 Remove an HTML Element from the DOM.html</a></li>
+    <li><a href="Validate a form input using Javascript.html" download>📄 Validate a form input using Javascript.html</a></li>
+    <li><a href="index.html" download>📄 index.html</a></li>
+    <li><a href="index1.html" download>📄 index1.html</a></li>
+  </ul>
+
+  <!-- ==================== JSX FILES ==================== -->
+  <h2>⚛️ React JSX Files</h2>
+  <ul>
     <li><a href=". Display text using String literals.jsx" download>📄 . Display text using String literals.jsx</a></li>
     <li><a href=". Implement CRUD operations using Express.js.jsx" download>📄 . Implement CRUD operations using Express.js.jsx</a></li>
     <li><a href=". Small website with multiple routes.jsx" download>📄 . Small website with multiple routes.jsx</a></li>
     <li><a href=". Two components sharing data using Props.jsx" download>📄 . Two components sharing data using Props.jsx</a></li>
-    <li><a href=".git" download>📄 .git</a></li>
-    <li><a href="Change Image on Button Click.html" download>📄 Change Image on Button Click.html</a></li>
     <li><a href="Conditionally render a component.jsx" download>📄 Conditionally render a component.jsx</a></li>
-    <li><a href="Connection between API and Database using Express-MySQL.js" download>📄 Connection between API and Database using Express-MySQL.js</a></li>
-    <li><a href="Count the Numbers of Clicks on a Button.html" download>📄 Count the Numbers of Clicks on a Button.html</a></li>
     <li><a href="Counter button using React class components.jsx" download>📄 Counter button using React class components.jsx</a></li>
     <li><a href="Counter button using the useState hook.jsx" download>📄 Counter button using the useState hook.jsx</a></li>
-    <li><a href="Create a Database and a table.sql" download>📄 Create a Database and a table.sql</a></li>
-    <li><a href="event listiner.html" download>📄 event listiner.html</a></li>
     <li><a href="Fetch data from an API using the useEffect hook.jsx" download>📄 Fetch data from an API using the useEffect hook.jsx</a></li>
-    <li><a href="fsd-2_full_lab_manual.docx" download>📄 fsd-2_full_lab_manual.docx</a></li>
-    <li><a href="fun dec ,fun exp ,arrow fun.html" download>📄 fun dec ,fun exp ,arrow fun.html</a></li>
     <li><a href="Handle button click events in the functional component.jsx" download>📄 Handle button click events in the functional component.jsx</a></li>
-    <li><a href="Handle the click events for HTML button elements.html" download>📄 Handle the click events for HTML button elements.html</a></li>
     <li><a href="Hello world message in a route using Express.jsx" download>📄 Hello world message in a route using Express.jsx</a></li>
-    <li><a href="html page using selectors.html" download>📄 html page using selectors.html</a></li>
     <li><a href="Implement forms in React.jsx" download>📄 Implement forms in React.jsx</a></li>
-    <li><a href="Implement subqueries.sql" download>📄 Implement subqueries.sql</a></li>
-    <li><a href="index.html" download>📄 index.html</a></li>
-    <li><a href="index.js" download>📄 index.js</a></li>
-    <li><a href="index1.html" download>📄 index1.html</a></li>
-    <li><a href="Initialize a database.sql file for an API project.sql" download>📄 Initialize a database.sql file for an API project.sql</a></li>
     <li><a href="Iterative rendering using map() function.jsx" download>📄 Iterative rendering using map() function.jsx</a></li>
-    <li><a href="Manipulate Styles of HTML Elements using Javascript.html" download>📄 Manipulate Styles of HTML Elements using Javascript.html</a></li>
     <li><a href="Print hello world in the browser console.jsx" download>📄 Print hello world in the browser console.jsx</a></li>
-    <li><a href="Remove an HTML Element from the DOM.html" download>📄 Remove an HTML Element from the DOM.html</a></li>
-    <li><a href="Validate a form input using Javascript.html" download>📄 Validate a form input using Javascript.html</a></li>
+  </ul>
+
+  <!-- ==================== JS FILES ==================== -->
+  <h2>🟨 JavaScript Files</h2>
+  <ul>
+    <li><a href="Connection between API and Database using Express-MySQL.js" download>📄 Connection between API and Database using Express-MySQL.js</a></li>
+    <li><a href="index.js" download>📄 index.js</a></li>
+  </ul>
+
+  <!-- ==================== SQL FILES ==================== -->
+  <h2>🗄️ SQL Files</h2>
+  <ul>
+    <li><a href=". Create script files in MySQL Workbench.sql" download>📄 . Create script files in MySQL Workbench.sql</a></li>
+    <li><a href=". Create, insert, and update data in a table.sql" download>📄 . Create, insert, and update data in a table.sql</a></li>
+    <li><a href="Create a Database and a table.sql" download>📄 Create a Database and a table.sql</a></li>
+    <li><a href="Implement subqueries.sql" download>📄 Implement subqueries.sql</a></li>
+    <li><a href="Initialize a database.sql file for an API project.sql" download>📄 Initialize a database.sql file for an API project.sql</a></li>
+  </ul>
+
+  <!-- ==================== DOCUMENTS ==================== -->
+  <h2>📘 Documents</h2>
+  <ul>
+    <li><a href="fsd-2_full_lab_manual.docx" download>📄 fsd-2_full_lab_manual.docx</a></li>
   </ul>
 
   <footer>
-    © 2025 FSD Lab Manual Portal — Built by Praneeth Kumar
+    © 2025 FSD Lab Materials — Organized by Praneeth Kumar
   </footer>
 </body>
 </html>
